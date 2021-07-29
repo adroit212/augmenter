@@ -103,7 +103,6 @@ def channel_compress(color_channel, singular_value_limit):
     compressed = inner_compressed.astype('uint8')
     return compressed
 
-
 def reduce_dim(filepath, savedir):
     image = Image.open(filepath)
     im_array = np.array(image)
